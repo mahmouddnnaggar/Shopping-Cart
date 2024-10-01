@@ -1,0 +1,41 @@
+header .account {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+header .account span {
+    font-weight: 900;
+    cursor: pointer;
+    color: brown;
+<<<<<<< HEAD
+    font-size: 15px;
+}
+header .account #accountName {
+    font-size: 15px !important;
+=======
+    font-size: 12px;
+>>>>>>> 32417a6 (last for response)
+}
+.app {
+    margin-top: 300px;
+}
+.app h1 {
+    width: fit-content;
+    margin-inline: auto;
+}
+@media (max-width: 992px) {
+    .app h1 {
+        font-size: 25px;
+    }
+    header .account span {
+        font-size: 10px;
+    }
+}
+@media (max-width: 768px) {
+    .app h1 {
+        font-size: 20px;
+    }
+    header .account span {
+        font-size: 8px;
+    }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../css/main.css" />
+        <link rel="stylesheet" href="../css/login.css" />
+        <title>Shopping Cart | Login Page</title>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <a class="logo" id="logo">Shopping Cart</a>
+                <ul class="nav">
+                    <li><a href="./index.html" class="active">Login</a></li>
+                    <li><a href="./html/register.html">Sign Up</a></li>
+                </ul>
+            </div>
+        </header>
+        <section class="form-section">
+            <div class="container">
+                <div class="form-wrapper" id="formWrapper">
+                    <h2>Login User</h2>
+                    <form novalidate>
+                        <input
+                            type="email"
+                            placeholder="Email"
+                            id="userEmail"
+                            name="userEmail"
+                            autocomplete="off"
+                        />
+                        <div class="error-messages">
+                            <span>Enter A Valid Exist Email</span>
+                        </div>
+                        <input
+                            type="password"
+                            placeholder="Password"
+                            id="userPass"
+                            name="userPass"
+                            autocomplete="off"
+                        />
+                        <div class="error-messages">
+                            <span>This Password Is Wrong</span>
+                            <span>Enter A Valid Exist Email First</span>
+                        </div>
+                        <button type="button" id="loginBtn">Login</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <script src="../js/main.js"></script>
+        <script src="../js/login.js"></script>
+    </body>
+</html>

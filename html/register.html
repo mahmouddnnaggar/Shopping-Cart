@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../css/main.css" />
+        <link rel="stylesheet" href="../css/register.css" />
+        <title>Shopping Cart | Register Page</title>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <a class="logo" id="logo">Shopping Cart</a>
+                <ul class="nav">
+                    <li><a href="../index.html">Login</a></li>
+                    <li>
+                        <a href="./register.html" class="active">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <section class="form-section">
+            <div class="container">
+                <div class="form-wrapper" id="formWrapper">
+                    <h2>Register</h2>
+                    <form novalidate>
+                        <input
+                            type="text"
+                            placeholder="Name"
+                            id="userName"
+                            name="userName"
+                            autocomplete="off"
+                        />
+                        <div class="error-messages">
+                            <span
+                                >The name must be at least 3 letters long and
+                                the first letter must be capitalized</span
+                            >
+                        </div>
+                        <input
+                            type="email"
+                            placeholder="Email"
+                            id="userEmail"
+                            name="userEmail"
+                            autocomplete="off"
+                        />
+                        <div class="error-messages">
+                            <span>this email is already exist before</span>
+                            <span>enter a valid email</span>
+                        </div>
+                        <input
+                            type="password"
+                            placeholder="Password"
+                            id="userPass"
+                            name="userPass"
+                            autocomplete="off"
+                        />
+                        <div class="error-messages">
+                            <span
+                                >The Password must be at least 8 letters long</span
+                            >
+                        </div>
+                        <button id="signupBtn" type="button">Sign Up</button>
+                        <span id="enterDataMessage"
+                            >Enter A Valid Data First To Register</span
+                        >
+                    </form>
+                </div>
+            </div>
+        </section>
+        <script src="../js/main.js"></script>
+        <script src="../js/register.js"></script>
+    </body>
+</html>
